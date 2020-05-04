@@ -4,12 +4,6 @@ I recently learnt that SQL has the ability to join a table to itself, this is ca
 
 Let’s say for example we have an employees table which looks something like this:
 
-employee_id first_name last_name manager_id
-1 Abraham Lincoln
-2 Benjamin Franklkin 1
-3 Charlie Brown 1
-4 Douglas Greyling 2
-
 | employee_id | first_name | last_name | manager_id |
 | ----------- | ---------- | --------- | ---------- |
 | 1           | Abraham    | Lincoln   |            |
