@@ -4,8 +4,6 @@ title: SQL Stored Procedures
 date: May 14 2020
 ---
 
-# #5 – SQL Stored Procedures
-
 SQL allows us to create something called a stored procedure. It’s basically code which has been saved so that we can call it and reuse it when we need it.
 
 We can even add things like parameters to our stored procedures, so it’s super useful when we don’t want to repetitively write and call a common query.

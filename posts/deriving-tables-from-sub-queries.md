@@ -4,8 +4,6 @@ title: Deriving Tables From Sub-Queries
 date: May 10 2020
 ---
 
-# #3 SQL Deriving tables from sub-queries
-
 Here’s a quick lesson I learnt about. Hopefully it comes in handy some time.
 
 I’ve been learning a little about SQL sub-queries lately and I recently discovered that you can query a sub-query. I hope this makes sense, but I’m sure an actual example might make more sense.
