@@ -3,17 +3,16 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <div className="container">
+      <div className="flex bg-gray-800 text-white py-1.5 px-8 items-center">
         <Link href="/">
-          <a>
-            <h2>Douglas Greyling</h2>
+          <a className="mr-auto hover:bg-gray-700 px-3 py-1.5 rounded transition duration-200">
+            <h1 className="text-2xl">Douglas Greyling</h1>
           </a>
         </Link>
-        <h3>A blog about the things I learn</h3>
-      </div>
-      <div>
         <Link href="/posts">
-          <a>All posts</a>
+          <a className="bg-indigo-600 px-3 py-1.5 rounded hover:bg-indigo-500 transition duration-200">
+            All Posts
+          </a>
         </Link>
       </div>
     </header>
