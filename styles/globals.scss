@@ -1,3 +1,84 @@
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
+
+html {
+  font-size: 16px;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  margin: 0;
+}
+
+.whitespace-break {
+  white-space: break-spaces;
+}
+
+code {
+  @apply bg-gray-200 rounded p-1 whitespace-nowrap;
+}
+
+pre {
+  code {
+    @apply bg-white rounded p-0;
+    @extend .whitespace-break;
+  }
+
+  @apply bg-white rounded p-5 mt-6 mb-8 shadow-md;
+}
+
+p {
+  @apply pb-3;
+}
+
+h1 {
+  @apply text-3xl mb-4;
+}
+
+h2 {
+  @apply text-lg mb-4 font-bold;
+}
+
+h3 {
+  @apply text-xl mb-4 font-bold;
+}
+
+table {
+  @apply border border-gray-500 mt-6 mb-8 rounded w-full;
+
+  th,
+  td {
+    @apply border border-gray-500 p-2;
+  }
+
+  th {
+    @apply text-left;
+  }
+}
+
+.button {
+  @apply bg-indigo-600 px-3 py-1.5 rounded text-white no-underline;
+
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  @apply bg-indigo-500 text-white no-underline;
+}
+
+a.button:hover {
+  text-decoration: none !important;
+}
+
+ul {
+  li {
+    list-style-type: disc;
+  }
+}
+
+a:hover {
+  @apply text-indigo-500 underline transition duration-75;
+}
