@@ -5,6 +5,7 @@ import { fetchPosts } from "../../utils";
 export default function Posts({ posts }) {
   return (
     <div>
+      <h3>All Posts</h3>
       <ul>
         {posts.map((post, index) => (
           <li key={index}>

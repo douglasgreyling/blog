@@ -17,21 +17,25 @@ export default function Home({ posts }) {
 
       <div className="posts">
         {posts.map((post, index) => (
-          <Post
-            key={index}
-            title={post.frontmatter.title}
-            date={post.frontmatter.date}
-            content={post.content}
-            slug={post.slug}
-          />
+          <div key={index}>
+            <Post
+              title={post.frontmatter.title}
+              date={post.frontmatter.date}
+              content={post.content}
+              slug={post.slug}
+            />
+            <hr className="my-10" />
+          </div>
         ))}
       </div>
 
-      <Link href="/posts">
-        <a>
-          <h4>Read more posts...</h4>
-        </a>
-      </Link>
+      <div className="flex justify-center pb-20">
+        <Link href="/posts">
+          <a className="button">
+            <h4>Read more posts</h4>
+          </a>
+        </Link>
+      </div>
     </div>
   );
 }

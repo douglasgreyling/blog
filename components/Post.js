@@ -18,7 +18,7 @@ export default function Post({ title, date, content, slug }) {
   return (
     <div>
       {renderTitle()}
-      <h2>{date}</h2>
+      <h2 className="text-gray-400 font-extralight mb-5 text-lg">{date}</h2>
       <div dangerouslySetInnerHTML={{ __html: content }}></div>
     </div>
   );
