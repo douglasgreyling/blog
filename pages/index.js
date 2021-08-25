@@ -4,7 +4,7 @@ import Link from "next/link";
 import Post from "../components/Post";
 import { fetchPosts } from "../utils";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 
 export default function Home({ posts }) {
   return (
