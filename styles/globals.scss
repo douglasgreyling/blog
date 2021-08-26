@@ -22,12 +22,12 @@ code {
 }
 
 pre {
+  @apply bg-white rounded p-5 mt-6 mb-8 shadow-md overflow-x-auto;
+
   code {
     @apply bg-white rounded p-0;
     @extend .whitespace-break;
   }
-
-  @apply bg-white rounded p-5 mt-6 mb-8 shadow-md;
 }
 
 p {
