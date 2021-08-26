@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import Post from "../../components/Post";
 import { fetchPostSlugs, fetchPost } from "../../utils";
+import { backendURL } from "../../utils/backend";
 
 export default function PostPage({ frontmatter: { title, date }, content }) {
   return (
@@ -9,7 +10,7 @@ export default function PostPage({ frontmatter: { title, date }, content }) {
       <Post title={title} date={date} content={content} />
 
       <div className="flex justify-center pt-10 pb-20">
-        <Link href="/posts" as={process.env.NEXT_PUBLIC_BACKEND_URL + "/posts"}>
+        <Link href="/posts" as={backendURL + "/posts"}>
           <a className="button">
             <h4>Read more posts</h4>
           </a>

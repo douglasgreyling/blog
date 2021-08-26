@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { fetchPosts } from "../../utils";
+import { backendURL } from "../../utils/backend";
 
 export default function Posts({ posts }) {
   return (
@@ -11,7 +12,7 @@ export default function Posts({ posts }) {
           <li key={index}>
             <Link
               href={`/posts/${post.slug}`}
-              as={`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${post.slug}`}
+              as={`${backendURL}/posts/${post.slug}`}
             >
               <a>{post.frontmatter.title}</a>
             </Link>

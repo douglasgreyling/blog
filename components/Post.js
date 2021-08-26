@@ -1,15 +1,14 @@
 import Link from "next/link";
 
+import { backendURL } from "../utils/backend";
+
 export default function Post({ title, date, content, slug }) {
   const renderTitle = () => {
     if (slug === undefined) {
       return <h1>{title}</h1>;
     } else {
       return (
-        <Link
-          href={`/posts/${slug}`}
-          as={`/${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${slug}`}
-        >
+        <Link href={`/posts/${slug}`} as={`${backendURL}/posts/${slug}`}>
           <a>
             <h1>{title}</h1>
           </a>
