@@ -30,7 +30,7 @@ export default function Home({ posts }) {
       </div>
 
       <div className="flex justify-center pb-20">
-        <Link href="/posts">
+        <Link href="/posts" as={process.env.NEXT_PUBLIC_BACKEND_URL + "/posts"}>
           <a className="button">
             <h4>Read more posts</h4>
           </a>

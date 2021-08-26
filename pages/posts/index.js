@@ -9,7 +9,10 @@ export default function Posts({ posts }) {
       <ul>
         {posts.map((post, index) => (
           <li key={index}>
-            <Link href={`/posts/${post.slug}`}>
+            <Link
+              href={`/posts/${post.slug}`}
+              as={`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${post.slug}`}
+            >
               <a>{post.frontmatter.title}</a>
             </Link>
           </li>

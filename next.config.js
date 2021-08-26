@@ -1,6 +1,9 @@
 const path = require("path");
 
+const debug = process.env.NODE_ENV !== "production";
+
 module.exports = {
+  assetPrefix: !debug ? "/blog/" : "",
   reactStrictMode: true,
   webpackDevMiddleware: (config) => {
     config.watchOptions = {

@@ -6,7 +6,10 @@ export default function Post({ title, date, content, slug }) {
       return <h1>{title}</h1>;
     } else {
       return (
-        <Link href={`/posts/${slug}`}>
+        <Link
+          href={`/posts/${slug}`}
+          as={`/${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${slug}`}
+        >
           <a>
             <h1>{title}</h1>
           </a>

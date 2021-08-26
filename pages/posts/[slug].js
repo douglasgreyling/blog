@@ -9,7 +9,7 @@ export default function PostPage({ frontmatter: { title, date }, content }) {
       <Post title={title} date={date} content={content} />
 
       <div className="flex justify-center pt-10 pb-20">
-        <Link href="/posts">
+        <Link href="/posts" as={process.env.NEXT_PUBLIC_BACKEND_URL + "/posts"}>
           <a className="button">
             <h4>Read more posts</h4>
           </a>
