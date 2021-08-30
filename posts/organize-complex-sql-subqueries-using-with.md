@@ -1,7 +1,7 @@
 ---
 id: 12
 title: Organize complex SQL subqueries using WITH
-date: August 29 2020
+date: August 29 2021
 ---
 
 You might find yourself working with complex nested subqueries when writing raw SQL. I recently learned about `WITH` clauses and so here's how they might simplify your life.
